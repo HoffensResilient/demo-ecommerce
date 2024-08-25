@@ -97,6 +97,14 @@ body{
 .featured-products,
 .category-list .category {
     min-width: 150px;
+    background-color: #f2f7fb;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.category-list{
+    min-width: 150px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -146,6 +154,22 @@ body{
 .addtocart{
     font-size: 15px;
 }
+
+.category img{
+    display: block;
+    /* flex: 1 0 100%; */
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+.explore{
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* all-products */
 .all-products{
     overflow-x: auto;
@@ -166,7 +190,7 @@ body{
 .all-products {
     
     min-width: 150px;
-    background-color: #fff;
+    background-color: #f2f7fb;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
     text-align: center;
@@ -211,14 +235,26 @@ body{
 }
 
 .footer {
+    display: flex;
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
     padding-bottom: 70px;
 }
+.footer h3{
+    padding-bottom: 10px;
+}
+.footer i{
+    padding-bottom: 5px;
+}
+.footer li{
+    padding-bottom: 5px;
+}
 
-.footer .footer-section {
+.footer-section {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
@@ -259,7 +295,7 @@ body{
 /* Custom styles for sliding menus */
 .sidebar {
     transition: transform 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: #f2f7fb;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 250px; /* Adjust width as needed */
     height: 100%;
@@ -301,7 +337,7 @@ ul{
     width: 90%;
     z-index: 900;
     background-color: #f2f7fb6c;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     padding: 20px;
@@ -363,7 +399,7 @@ hr {
     width: 90%;
     z-index: 900;
     background-color: #f2f7fb6c;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     padding: 20px;
