@@ -14,4 +14,3 @@ function showleftsidebar() {
     leftsidebar.style.display = 'none';
     rightsidebar.style.display = 'none';
   }
-  

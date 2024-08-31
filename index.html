@@ -9,6 +9,7 @@
 </head>
 <body>
 
+   <div class="container">
     <header class="header">
       <!-- Leftsidebar for listmenu -->
         <div class="leftsidebar">
@@ -324,7 +325,12 @@
         <i class="fa-solid fa-user"></i>
       </button>
     </nav>
-    <script src="script.js">
+   </div>
+       <script src="script.js">
+         window.onload = function() {
+    // Resize window to 400px width
+    window.resizeTo(400, window.innerHeight);
+  };
       
     </script>
 </body>
