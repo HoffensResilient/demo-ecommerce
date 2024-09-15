@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    max-width: 400px;
+    max-width: 500px;
 }
 body{
     padding-top: 80px;
@@ -12,7 +12,7 @@ body{
     
 }
 .container{
-    max-width: 400px;
+    max-width: 500px;
 }
 
 
