@@ -2,7 +2,7 @@
 
 Welcome to the **Demo E-Commerce** project! This repository showcases a simplified e-commerce homepage built using plain HTML, CSS, and JavaScript. The demo is designed to provide a sleek, mobile-friendly user experience with key e-commerce features.
 
-Hosted Url: https://luxurystoredemo.netlify.app/
+Hosted Url: [[Luxury Store Demo](https://luxurystoredemo.netlify.app/)]
 
 ## Features
 
