@@ -39,7 +39,7 @@ Hosted Url: https://luxurystoredemo.netlify.app/
 
 3. **Open `index.html` in a Web Browser**
 
-   Hosted Url: https://luxurystoredemo.netlify.app/
+   Hosted Url: [[Luxury Store Demo](https://luxurystoredemo.netlify.app/)]
    Simply open the `index.html` file in your preferred web browser to view the demo.
 
 ## Usage
