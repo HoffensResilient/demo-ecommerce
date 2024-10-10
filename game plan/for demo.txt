@@ -1,0 +1,53 @@
+Primary color
+oceanblue : #1bddf2
+	#6cbad9
+	#83bae4
+	#35d0f2
+
+Grey : 	#b8cdde
+	#cce0ff
+
+
+white : 	#f2f7fb
+	#ffffff
+	#faf6ff
+	
+dark : 	#00404d
+	#0c0c0c
+
+mobile version
+
+landing / homepage
+
+navigation bar 
+ here logo in middle, left side bar menu, right side cart menu
+
+left side bar opens with options in it
+
+right side bar opens with shopping cart items in it
+
+hero banner with 3 spotlight product
+
+featured products with horizontal scrolling mannually
+ add full with image for featured image [advertised]
+
+pick up for you same scrolling
+ add full with image for pick up image [advertised]
+
+categories with same scrolling
+
+all product with verticall scrolling
+ add full with image for global image [advertised]
+
+footer
+ Socials
+ footer menu
+ useful links
+
+
+bottom fixed bar 
+ shop
+ filters (only when shop clicked)
+ wishlist
+ cart
+ profile (my account)
