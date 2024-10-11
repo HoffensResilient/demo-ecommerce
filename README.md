@@ -66,4 +66,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## Contact
 
 For questions or feedback, please open an issue on GitHub or contact [rohitrajsarrafnp@gmail.com](mailto:rohitrajsarrafnp@gmail.com).
-
