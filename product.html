@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be95fc439d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <div class="container">
+    <header class="header">
+      <!-- Leftsidebar for listmenu -->
+        <div class="leftsidebar">
+          <div class="leftmenu">
+            <h1 class="text-center">Luxury Store</h1>
+            <i onclick="closebar()" class="fa-solid fa-xmark closeicon"></i>
+          </div>
+          <hr>
+          <div class="menuitem">
+           
+            <li><a href="#">Menswear</a></li>
+            <li><a href="#">Womenswear</a></li>
+            <li><a href="#">Kidswear</a></li>
+            <br>
+            <li><a href="#">New in</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">Bags</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Accessories</a></li>
+            
+          </div>
+        </div>
+      
+        <!-- Navigation panel-->
+        <div class="navbar">
+          <button class="icon-btn">
+            <i onclick="showleftsidebar()" class="fa-solid fa-bars"></i>
+          </button>
+          <h1 class="text-center">Luxury Store</h1>
+          <button class="icon-btn">
+            <i onclick="showrightsidebar()" class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+      <!-- Rightsidebar for shopping cart -->
+        <div class="rightsidebar">
+          <div class="rightmenu">
+            <h1 class="text-center">Shopping Cart</h1>
+            <i onclick="closebar()" class="fa-solid fa-xmark closeicon"></i>
+          </div>
+          <hr>
+          <div >
+            <!-- <h1 class="emptycart"></h1> -->
+          </div>
+          <div class="cartitem">
+           
+              <img src="static/8.jpg" alt="smart watch">
+              <div class="description">
+                <h2>Huawei Watch Ultra Pro</h2>
+                <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
+                <div class="calculate">
+                  <div>
+                    <span>$199.99</span>
+                    <i class="fa-solid fa-trash-alt"></i>
+                  </div>
+                  <div class="addmore">
+                    <button class="minus">-</button>
+                    <input type="text" value="1" disabled>
+                    <button class="plus">+</button>
+                  </div>
+                 
+  
+                  
+                </div>
+              </div>
+            
+          </div>
+          <div class="cartbottom">
+            <button>
+              <i class="fa-solid fa-shopping-cart"></i>
+              Go to Checkout
+            </button>
+          </div>
+
+        </div>
+    </header>
+
+    <!-- Hero Section & carousel -->
+    
+    <section class="hero-banner"> <!-- container -->
+      <h3>New in: handpicked daily from the world’s best brands and boutiques</h3>
+      <div class="spotlight-product"> <!-- slider-wrapper -->
+        <div class="slider">
+          <img src="static/1.jpg" alt="" id="slide-1">
+          <img src="static/2.jpg" alt="" id="slide-2">
+          <img src="static/3.jpg" alt="" id="slide-3">
+
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="featured-products">
+      <h2 class="text-xl font-bold mb-4">Featured Products</h2>
+      <div class="products-scroll">
+
+        <div class="product">
+          <div class="wishlist-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/4.jpg" alt="" onclick="window.location.href='product.html';">
+          <span>Product 1</span>
+          <h4>Rs 500</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+
+        <div class="product">
+          <div class="wishlist-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/5.jpg" alt="" onclick="window.location.href='product.html';">
+          <span>Product 3</span>
+          <h4>Rs 400</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+
+        <div class="product">
+          <div class="wishlist-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/6.jpg" alt="" onclick="window.location.href='product.html';">
+          <span>Product 3</span>
+          <h4>Rs 800</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="product">
+          <div class="wishlist-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/7.jpg" alt="" onclick="window.location.href='product.html';">
+          <span>Product 4</span>
+          <h4>Rs 900</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="product">
+          <div class="wishlist-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/8.jpg" alt="" onclick="window.location.href='product.html';">
+          <span>Product 5</span>
+          <h4>Rs 700</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- Categories -->
+    <section class="category-list">
+      <h2 class="text-xl font-bold mb-4">Categories</h2>
+      <div class="categories-scroll">
+        <div class="category">
+          <img src="static/cat1.png" alt="" onclick="window.location.href='category.html';">
+          <button class="explore">
+            <span>
+              <i class="fa-solid fa-store text-2xl mb-2"></i>
+              Explore
+            </span>
+          </button>
+        </div>
+        <div class="category">
+          <img src="static/cat2.png" alt="" onclick="window.location.href='category.html';">
+          <button class="explore">
+            <span>
+              <i class="fa-solid fa-store text-2xl mb-2"></i>
+              Explore
+            </span>
+          </button>
+        </div>
+        <div class="category">
+          <img src="static/cat3.png" alt="" onclick="window.location.href='category.html';">
+          <button class="explore">
+            <span>
+              <i class="fa-solid fa-store text-2xl mb-2"></i>
+              Explore
+            </span>
+          </button>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- All products -->
+    <section class="all-products">
+      <h2 class="text-xl font-bold mb-4">Explore Products</h2>
+      <div class="all-products-scroll">
+        <div class="products">
+          <div class="wishlist-icon">
+              <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/10.jpg" alt="">
+          <span>Product 10</span>
+          <h4>Rs 1000</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+      </div>
+      <div class="products">
+          <div class="wishlist-icon">
+              <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/5.jpg" alt="">
+          <span>Product 5</span>
+          <h4>Rs 400</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+      </div>
+      <div class="products">
+          <div class="wishlist-icon">
+              <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/7.jpg" alt="">
+          <span>Product 7</span>
+          <h4>Rs 900</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+      </div>
+      <div class="products">
+          <div class="wishlist-icon">
+              <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/9.jpg" alt="">
+          <span>Product 9</span>
+          <h4>Rs11700</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+      </div>
+      <div class="products">
+          <div class="wishlist-icon">
+              <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/8.jpg" alt="">
+          <span>Product 8</span>
+          <h4>Rs 700</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+      </div>
+      <div class="products">
+          <div class="wishlist-icon">
+              <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/6.jpg" alt="">
+          <span>Product 6</span>
+          <h4>Rs 800</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+      </div>
+      <div class="products">
+          <div class="wishlist-icon">
+              <i class="fa-solid fa-heart"></i>
+          </div>
+          <img src="static/4.jpg" alt="">
+          <span>Product 4</span>
+          <h4>Rs 500</h4>
+          <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+      </div>
+      
+      </div>
+    </section>
+    <!-- about the shop -->
+    <section class="aboutus">
+      <h3>Welcome to Luxury Shop</h3><br>
+      <p>
+        Discover the finest selection of luxury curated just for you. At Luxury Shop, we pride ourselves on offering quality products at unbeatable prices. Whether you’re looking for the latest trends, unique finds, or timeless classics, we’ve got something for everyone.
+        <br><br>
+        Explore our extensive collection and enjoy a seamless shopping experience with easy navigation, secure checkout, and prompt delivery. Our dedicated customer service team is here to assist you every step of the way.
+        <br><br>
+        Thank you for choosing Luxury Shop. Happy shopping!
+      </p>
+
+    </section>
+
+    <!-- Socials and footer -->
+    <footer class="footer">
+      <div class="footer-section">
+        <h3 class="text-lg font-bold">Socials</h3>
+        <i class="fa-brands fa-facebook-square text-xl"></i>
+        <i class="fa-brands fa-twitter text-xl"></i>
+        <i class="fa-brands fa-instagram text-xl"></i>
+      </div>
+      <div class="footer-section">
+        <h3 class="text-lg font-bold">Footer Menu</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="text-lg font-bold">Useful Links</h3>
+        <ul>
+          <li>FAQ</li>
+          <li>Support</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </footer>
+    
+    <!-- Bottom Navigation bar -->
+    <nav class="bottom-nav-bar">
+      <button class="icon-btn">
+        <i class="fa-solid fa-store"></i>
+      </button>
+      <!-- <button class="icon-btn">
+        <i class="fa-solid fa-filter"></i>
+      </button> -->
+      <button class="icon-btn">
+        <i class="fa-solid fa-heart"></i>
+      </button>
+      <button class="icon-btn">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </button>
+      <button class="icon-btn">
+        <i class="fa-solid fa-user"></i>
+      </button>
+    </nav>
+   </div>
+       <script src="script.js">
+         window.onload = function() {
+    // Resize window to 400px width
+    window.resizeTo(400, window.innerHeight);
+  };
+      
+    </script>
+</body>
+</html>

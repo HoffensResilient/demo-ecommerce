@@ -344,13 +344,14 @@ ul{
     left: 0;
     height: 90vh;
     width: 90%;
-    z-index: 900;
+    z-index: 999;
     background-color: #f2f7fb6c;
     backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
+    /* overflow-y: auto; */
     /* align-items: flex-start; */
     /* justify-content: flex-start; */
 }
@@ -406,12 +407,14 @@ hr {
     right: 0;
     height: 90vh;
     width: 90%;
-    z-index: 900;
+    z-index: 999;
     background-color: #f2f7fb6c;
     backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in; */
     /* align-items: flex-start; */
     /* justify-content: flex-start; */
 }
@@ -537,5 +540,14 @@ hr {
   }
 
   
+/* Prevent scrolling when sidebar is open */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* ******** Product.html page css ********** */
 
 
+
+
+/* ******** Category.html page css ********** */
