@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
     <script src="https://kit.fontawesome.com/be95fc439d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <div class="leftsidebar">
           <div class="leftmenu">
             <h1 class="text-center">Luxury Store</h1>
-            <i onclick="closebar()" class="fa-solid fa-xmark closeicon"></i>
+            <i onclick="closeleftbar()" class="fa-solid fa-xmark closeicon"></i>
           </div>
           <hr>
           <div class="menuitem">
@@ -41,7 +42,7 @@
           <button class="icon-btn">
             <i onclick="showleftsidebar()" class="fa-solid fa-bars"></i>
           </button>
-          <h1 class="text-center">Luxury Store</h1>
+          <a href="index.html"><h1 class="text-center">Luxury Store</h1></a>
           <button class="icon-btn">
             <i onclick="showrightsidebar()" class="fa-solid fa-cart-shopping"></i>
           </button>
@@ -51,21 +52,38 @@
         <div class="rightsidebar">
           <div class="rightmenu">
             <h1 class="text-center">Shopping Cart</h1>
-            <i onclick="closebar()" class="fa-solid fa-xmark closeicon"></i>
+            <i onclick="closerightbar()" class="fa-solid fa-xmark closeicon"></i>
           </div>
           <hr>
           <div >
             <!-- <h1 class="emptycart"></h1> -->
           </div>
           <div class="cartitem">
-           
-              <img src="static/8.jpg" alt="smart watch">
+            <img src="static/4.3.PNG" alt="Winter Coat" onclick="window.location.href='product.html';">
+            <div class="description">
+              <h2>Brown Winter Coat</h2>
+              <p>Stay warm and stylish this winter with our premium Brown Winter Coat.</p>
+              <div class="calculate">
+                <div>
+                  <span>Rs 500</span>
+                  <i class="fa-solid fa-trash-alt"></i>
+                </div>
+                <div class="addmore">
+                  <button class="minus">-</button>
+                  <input type="text" value="1" disabled>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartitem">
+              <img src="static/8.jpg" alt="smart watch" onclick="window.location.href='product.html';">
               <div class="description">
                 <h2>Huawei Watch Ultra Pro</h2>
                 <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
                 <div class="calculate">
                   <div>
-                    <span>$199.99</span>
+                    <span>Rs 8000</span>
                     <i class="fa-solid fa-trash-alt"></i>
                   </div>
                   <div class="addmore">
@@ -73,12 +91,8 @@
                     <input type="text" value="1" disabled>
                     <button class="plus">+</button>
                   </div>
-                 
-  
-                  
                 </div>
               </div>
-            
           </div>
           <div class="cartbottom">
             <button>
@@ -92,19 +106,79 @@
 
     <!-- Hero Section & carousel -->
     
-    <section class="hero-banner"> <!-- container -->
-      <h3>New in: handpicked daily from the world’s best brands and boutiques</h3>
-      <div class="spotlight-product"> <!-- slider-wrapper -->
+    <section class="product-banner"> <!-- container -->
+      <h4>Clothing > Mens > Winter Coat</h4>
+      <div class="product-spotlight"> <!-- slider-wrapper -->
         <div class="slider">
-          <img src="static/1.jpg" alt="" id="slide-1">
-          <img src="static/2.jpg" alt="" id="slide-2">
-          <img src="static/3.jpg" alt="" id="slide-3">
+          <img src="static/4.3.PNG" alt="" id="slide-1">
+          <img src="static/4.2.jpg" alt="" id="slide-2">
+          <img src="static/4.1.PNG" alt="" id="slide-3">
 
         </div>
         <div class="slider-nav">
           <a href="#slide-1"></a>
           <a href="#slide-2"></a>
           <a href="#slide-3"></a>
+        </div>
+        <div class="product-details">
+            <span>Brown Winter Coat</span>
+            <p>Stay warm and stylish this winter with our premium Brown Winter Coat.</p>
+            <h3>Rs 500</h3>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="product-description">
+            <h3>Product Details</h3>            
+            <span>Brown Winter Coat</span>
+            <p>
+              This luxurious coat is made with high-quality materials to ensure durability and warmth. Designed with a sleek, modern fit, it features:
+              <br> 
+              - Made in Italy <br> 
+              - Premium wool blend <br>
+              - Double-breasted button closure <br>
+              - Wide lapels and front pockets <br>
+              - Available in multiple sizes and colors
+            </p>
+            <h4>Highlights:</h4>
+            <ul class="product-highlights">
+                <li>Black/White</li>
+                <li>Double-breasted button fastening</li>
+                <li>Peak lapels</li>
+                <li>Shoulder pads</li>
+                <li>Long sleeves</li>
+                <li>Two front welt pockets</li>
+                <li>Adjustable strap to the rear</li>
+                <li>Full lining</li>
+                <li>Straight hem</li>
+            </ul>
+        </div>
+        
+        <div class="product-review">
+          <div class="rating">
+            <h3>Product Reviews</h3>  
+            <h4>Rating: ★★★★☆</h4>
+            <p>4.5 out of 5</p>
+          </div>
+      
+          <div class="reviews">
+              <h4>Customer Reviews:</h4>
+              <div class="review">
+                  <p><strong>John Doe:</strong> Excellent product, highly recommend!</p>
+                  <p><small>Posted on: Oct 1, 2024</small></p>
+              </div>
+              <div class="review">
+                  <p><strong>Jane Smith:</strong> Good value for the price.</p>
+                  <p><small>Posted on: Oct 3, 2024</small></p>
+              </div>
+          </div>
+      
+          <div class="submit-review">
+              <h4>Submit Your Review</h4>
+              <form action="/submit_review" method="POST">
+                  <textarea name="review" placeholder="Write your review here" required></textarea>
+                  <br>
+                  <input type="submit" value="Submit Review">
+              </form>
+          </div>
         </div>
       </div>
     </section>
@@ -164,52 +238,17 @@
         
       </div>
     </section>
+    
 
-
-    <!-- Categories -->
-    <section class="category-list">
-      <h2 class="text-xl font-bold mb-4">Categories</h2>
-      <div class="categories-scroll">
-        <div class="category">
-          <img src="static/cat1.png" alt="" onclick="window.location.href='category.html';">
-          <button class="explore">
-            <span>
-              <i class="fa-solid fa-store text-2xl mb-2"></i>
-              Explore
-            </span>
-          </button>
-        </div>
-        <div class="category">
-          <img src="static/cat2.png" alt="" onclick="window.location.href='category.html';">
-          <button class="explore">
-            <span>
-              <i class="fa-solid fa-store text-2xl mb-2"></i>
-              Explore
-            </span>
-          </button>
-        </div>
-        <div class="category">
-          <img src="static/cat3.png" alt="" onclick="window.location.href='category.html';">
-          <button class="explore">
-            <span>
-              <i class="fa-solid fa-store text-2xl mb-2"></i>
-              Explore
-            </span>
-          </button>
-        </div>
-        
-      </div>
-    </section>
-
-    <!-- All products -->
+    <!-- All Recommended products -->
     <section class="all-products">
-      <h2 class="text-xl font-bold mb-4">Explore Products</h2>
+      <h2 class="text-xl font-bold mb-4">Recommended Products</h2>
       <div class="all-products-scroll">
         <div class="products">
           <div class="wishlist-icon">
               <i class="fa-solid fa-heart"></i>
           </div>
-          <img src="static/10.jpg" alt="">
+          <img src="static/10.jpg" alt="" onclick="window.location.href='product.html';">
           <span>Product 10</span>
           <h4>Rs 1000</h4>
           <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
@@ -271,6 +310,33 @@
       
       </div>
     </section>
+    <!-- Why US Section -->
+    <div class="why-us-section">
+      <h2>Why US?</h2>
+      
+      <div class="why-us-cards">
+        
+        <div class="card">
+          <h3>The one that you want? We've got it.</h3>
+          <p>Shop over 100,000 styles</p>
+          <a href="#">View all</a>
+        </div>
+        
+        <div class="card">
+          <h3>4.7/5 stars and 25,000+ reviews</h3>
+          <p>You know you can trust us</p>
+          <a href="#">Read reviews</a>
+        </div>
+        
+        <div class="card">
+          <h3>30-DAY FREE RETURNS</h3>
+          <p>Changed your mind? No problem</p>
+          <a href="#">Read more</a>
+        </div>
+    
+      </div>
+    </div>
+    
     <!-- about the shop -->
     <section class="aboutus">
       <h3>Welcome to Luxury Shop</h3><br>

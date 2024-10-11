@@ -42,7 +42,7 @@ body{
 }
 
 
-.spotlight-product {
+.spotlight {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -60,6 +60,7 @@ body{
 }
 .slider img{
     flex: 1 0 100%;
+    aspect-ratio: 3 / 4; 
     object-fit: cover;
     scroll-snap-align: start;
 }
@@ -157,6 +158,9 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+.product button:hover{
+    background-color: #015514;
+}
 .addtocart{
     font-size: 15px;
 }
@@ -174,6 +178,9 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.explore:hover{
+    background-color: #5c2801;
 }
 
 /* all-products */
@@ -228,6 +235,9 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.products button:hover{
+    background-color: #015514;
 }
 
 /* about us */
@@ -299,6 +309,10 @@ body{
     background-color: #f2f7fb;
     box-shadow: 0 2px 5px #b8cdde;
     z-index: 500;
+}
+.navbar a{
+    text-decoration: none;
+    color: #333;
 }
 
 /* Custom styles for sliding menus */
@@ -442,6 +456,7 @@ hr {
   }
   .cartitem img {
     width: 100px; /* Adjust image width as needed */
+    aspect-ratio: 1 / 1;
     height: 100px; /* Adjust image height as needed */
     margin-right: 10px; /* Add spacing between image and text */
   }

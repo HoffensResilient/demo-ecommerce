@@ -41,7 +41,7 @@
           <button class="icon-btn">
             <i onclick="showleftsidebar()" class="fa-solid fa-bars"></i>
           </button>
-          <h1 class="text-center">Luxury Store</h1>
+          <a href="#"><h1 class="text-center">Luxury Store</h1></a>
           <button class="icon-btn">
             <i onclick="showrightsidebar()" class="fa-solid fa-cart-shopping"></i>
           </button>
@@ -58,13 +58,50 @@
             <!-- <h1 class="emptycart"></h1> -->
           </div>
           <div class="cartitem">
+            <img src="static/4.3.PNG" alt="Winter Coat" onclick="window.location.href='product.html';">
+            <div class="description">
+              <h2>Brown Winter Coat</h2>
+              <p>Stay warm and stylish this winter with our premium Brown Winter Coat.</p>
+              <div class="calculate">
+                <div>
+                  <span>Rs 500</span>
+                  <i class="fa-solid fa-trash-alt"></i>
+                </div>
+                <div class="addmore">
+                  <button class="minus">-</button>
+                  <input type="text" value="1" disabled>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartitem">
+              <img src="static/8.jpg" alt="smart watch" onclick="window.location.href='product.html';">
+              <div class="description">
+                <h2>Huawei Watch Ultra Pro</h2>
+                <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
+                <div class="calculate">
+                  <div>
+                    <span>Rs 8000</span>
+                    <i class="fa-solid fa-trash-alt"></i>
+                  </div>
+                  <div class="addmore">
+                    <button class="minus">-</button>
+                    <input type="text" value="1" disabled>
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <!-- <div class="cartitem">
               <img src="static/8.jpg" alt="smart watch">
               <div class="description">
                 <h2>Huawei Watch Ultra Pro</h2>
                 <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
                 <div class="calculate">
                   <div>
-                    <span>$199.99</span>
+                    <span>Rs 199.99</span>
                     <i class="fa-solid fa-trash-alt"></i>
                   </div>
                   <div class="addmore">
@@ -82,7 +119,7 @@
                 <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
                 <div class="calculate">
                   <div>
-                    <span>$199.99</span>
+                    <span>Rs 199.99</span>
                     <i class="fa-solid fa-trash-alt"></i>
                   </div>
                   <div class="addmore">
@@ -92,43 +129,7 @@
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="cartitem">
-              <img src="static/8.jpg" alt="smart watch">
-              <div class="description">
-                <h2>Huawei Watch Ultra Pro</h2>
-                <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
-                <div class="calculate">
-                  <div>
-                    <span>$199.99</span>
-                    <i class="fa-solid fa-trash-alt"></i>
-                  </div>
-                  <div class="addmore">
-                    <button class="minus">-</button>
-                    <input type="text" value="1" disabled>
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="cartitem">
-              <img src="static/8.jpg" alt="smart watch">
-              <div class="description">
-                <h2>Huawei Watch Ultra Pro</h2>
-                <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
-                <div class="calculate">
-                  <div>
-                    <span>$199.99</span>
-                    <i class="fa-solid fa-trash-alt"></i>
-                  </div>
-                  <div class="addmore">
-                    <button class="minus">-</button>
-                    <input type="text" value="1" disabled>
-                    <button class="plus">+</button>
-                  </div>
-                </div>
-              </div>
-          </div>
+          </div> -->
           <div class="cartbottom">
             <button>
               <i class="fa-solid fa-shopping-cart"></i>
@@ -143,7 +144,7 @@
     
     <section class="hero-banner"> <!-- container -->
       <h3>New in: handpicked daily from the world’s best brands and boutiques</h3>
-      <div class="spotlight-product"> <!-- slider-wrapper -->
+      <div class="spotlight"> <!-- slider-wrapper -->
         <div class="slider">
           <img src="static/1.jpg" alt="" id="slide-1">
           <img src="static/2.jpg" alt="" id="slide-2">
@@ -258,7 +259,7 @@
           <div class="wishlist-icon">
               <i class="fa-solid fa-heart"></i>
           </div>
-          <img src="static/10.jpg" alt="">
+          <img src="static/10.jpg" alt="" onclick="window.location.href='product.html';">
           <span>Product 10</span>
           <h4>Rs 1000</h4>
           <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
