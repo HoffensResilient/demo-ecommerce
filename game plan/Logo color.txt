@@ -1,0 +1,50 @@
+Business Name
+HEX:
+#001f3f
+RGB:
+0 31 63
+CMYK:
+100 51 0 75
+Slogan
+HEX:
+#AA9903
+RGB:
+170 153 3
+CMYK:
+0 10 98 33
+Pantone:
+16-0840
+Icon
+HEX:
+#001f3f
+RGB:
+0 31 63
+CMYK:
+100 51 0 75
+Background
+HEX:
+#FFFFFF
+RGB:
+255 255 255
+CMYK:
+0 0 0 0
+Pantone:
+11-0601
+Background Elements
+HEX:
+#AA9903
+RGB:
+170 153 3
+CMYK:
+0 10 98 33
+Pantone:
+16-0840
+Foreground Elements
+HEX:
+#ffffff
+RGB:
+255 255 255
+CMYK:
+0 0 0 0
+Pantone:
+11-0601
