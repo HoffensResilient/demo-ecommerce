@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="all-products.css">
+    <link rel="stylesheet" href="category.css">
+    <script src="https://kit.fontawesome.com/be95fc439d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <div class="container">
+    <header class="header">
+      <!-- Leftsidebar for listmenu -->
+        <div class="leftsidebar">
+          <div class="leftmenu">
+            <h1 class="text-center">Luxury Store</h1>
+            <i onclick="closeleftbar()" class="fa-solid fa-xmark closeicon"></i>
+          </div>
+          <hr>
+          <div class="menuitem">
+           
+            <li><a href="#">Menswear</a></li>
+            <li><a href="#">Womenswear</a></li>
+            <li><a href="#">Kidswear</a></li>
+            <br>
+            <li><a href="#">New in</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">Bags</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Accessories</a></li>
+            
+          </div>
+        </div>
+      
+        <!-- Navigation panel-->
+        <div class="navbar">
+          <button class="icon-btn">
+            <i onclick="showleftsidebar()" class="fa-solid fa-bars"></i>
+          </button>
+          <a href="index.html"><h1 class="text-center">Luxury Store</h1></a>
+          <button class="icon-btn">
+            <i onclick="showrightsidebar()" class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+      <!-- Rightsidebar for shopping cart -->
+        <div class="rightsidebar">
+          <div class="rightmenu">
+            <h1 class="text-center">Shopping Cart</h1>
+            <i onclick="closerightbar()" class="fa-solid fa-xmark closeicon"></i>
+          </div>
+          <hr>
+          <div >
+            <!-- <h1 class="emptycart"></h1> -->
+          </div>
+          <div class="cartitem">
+            <img src="static/4.3.PNG" alt="Winter Coat" onclick="window.location.href='product.html';">
+            <div class="description">
+              <h2>Brown Winter Coat</h2>
+              <p>Stay warm and stylish this winter with our premium Brown Winter Coat.</p>
+              <div class="calculate">
+                <div>
+                  <span>Rs 500</span>
+                  <i class="fa-solid fa-trash-alt"></i>
+                </div>
+                <div class="addmore">
+                  <button class="minus">-</button>
+                  <input type="text" value="1" disabled>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cartitem">
+              <img src="static/8.jpg" alt="smart watch" onclick="window.location.href='product.html';">
+              <div class="description">
+                <h2>Huawei Watch Ultra Pro</h2>
+                <p>A crafted masterpiece of a smart watch that's as dynamic as it is durable. Scale new heights, plunge to new depths, and explore the deep unknown knowing this watch has got your back!</p>
+                <div class="calculate">
+                  <div>
+                    <span>Rs 8000</span>
+                    <i class="fa-solid fa-trash-alt"></i>
+                  </div>
+                  <div class="addmore">
+                    <button class="minus">-</button>
+                    <input type="text" value="1" disabled>
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="cartbottom">
+            <button>
+              <i class="fa-solid fa-shopping-cart"></i>
+              Go to Checkout
+            </button>
+          </div>
+
+        </div>
+    </header>
+    
+    <!-- Banner -->
+    <section class="product-banner"> <!-- container -->
+        <h4>
+          <a href="index.html">Home</a> > 
+          <a href="category.html">Categories</a> > 
+          <a href="accessories.html">Accessories</a>
+        </h4>
+    </section>
+
+    
+    
+
+    <!-- All products -->
+    <section class="all-products">
+      <h2 class="text-xl font-bold mb-4">Accessories</h2>
+      <div class="all-products-scroll">
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/10.jpg" alt="" onclick="window.location.href='product.html';">
+            <span>Product 10</span>
+            <h4>Rs 1000</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/5.jpg" alt="">
+            <span>Product 5</span>
+            <h4>Rs 400</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/7.jpg" alt="">
+            <span>Product 7</span>
+            <h4>Rs 900</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/9.jpg" alt="">
+            <span>Product 9</span>
+            <h4>Rs11700</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/8.jpg" alt="">
+            <span>Product 8</span>
+            <h4>Rs 700</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/6.jpg" alt="">
+            <span>Product 6</span>
+            <h4>Rs 800</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/4.jpg" alt="">
+            <span>Product 4</span>
+            <h4>Rs 500</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/10.jpg" alt="" onclick="window.location.href='product.html';">
+            <span>Product 10</span>
+            <h4>Rs 1000</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/5.jpg" alt="">
+            <span>Product 5</span>
+            <h4>Rs 400</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/7.jpg" alt="">
+            <span>Product 7</span>
+            <h4>Rs 900</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/9.jpg" alt="">
+            <span>Product 9</span>
+            <h4>Rs11700</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/8.jpg" alt="">
+            <span>Product 8</span>
+            <h4>Rs 700</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/6.jpg" alt="">
+            <span>Product 6</span>
+            <h4>Rs 800</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/4.jpg" alt="">
+            <span>Product 4</span>
+            <h4>Rs 500</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/10.jpg" alt="" onclick="window.location.href='product.html';">
+            <span>Product 10</span>
+            <h4>Rs 1000</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/5.jpg" alt="">
+            <span>Product 5</span>
+            <h4>Rs 400</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/7.jpg" alt="">
+            <span>Product 7</span>
+            <h4>Rs 900</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/9.jpg" alt="">
+            <span>Product 9</span>
+            <h4>Rs11700</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/8.jpg" alt="">
+            <span>Product 8</span>
+            <h4>Rs 700</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/6.jpg" alt="">
+            <span>Product 6</span>
+            <h4>Rs 800</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+        <div class="products">
+            <div class="wishlist-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="static/4.jpg" alt="">
+            <span>Product 4</span>
+            <h4>Rs 500</h4>
+            <button><i class="fa-solid fa-cart-plus addtocart"></i>Add to cart</button>
+        </div>
+      
+      </div>
+    </section>
+
+    <!-- All Products -->
+    <section class="all-products">
+      <!-- <h2 class="text-xl font-bold mb-4">All Products</h2> -->
+      <div class="all-products-scroll" id="products-container">
+          <!-- Products will be dynamically loaded here -->
+      </div>
+      <button id="load-more-btn" onclick="loadMoreProducts()">Load More</button>
+      <p id="end-message" style="display: none;">That's all for today! <br> To keep exploring, do a search!</p>
+  </section>
+    
+    <!-- Why US Section -->
+    <div class="why-us-section">
+      <h2>Why US?</h2>
+      
+      <div class="why-us-cards">
+        
+        <div class="card">
+          <h3>The one that you want? We've got it.</h3>
+          <p>Shop over 100,000 styles</p>
+          <a href="#">View all</a>
+        </div>
+        
+        <div class="card">
+          <h3>4.7/5 stars and 25,000+ reviews</h3>
+          <p>You know you can trust us</p>
+          <a href="#">Read reviews</a>
+        </div>
+        
+        <div class="card">
+          <h3>30-DAY FREE RETURNS</h3>
+          <p>Changed your mind? No problem</p>
+          <a href="#">Read more</a>
+        </div>
+    
+      </div>
+    </div>
+    
+    <!-- about the shop -->
+    <section class="aboutus">
+      <h3>Welcome to Luxury Shop</h3><br>
+      <p>
+        Discover the finest selection of luxury curated just for you. At Luxury Shop, we pride ourselves on offering quality products at unbeatable prices. Whether you’re looking for the latest trends, unique finds, or timeless classics, we’ve got something for everyone.
+        <br><br>
+        Explore our extensive collection and enjoy a seamless shopping experience with easy navigation, secure checkout, and prompt delivery. Our dedicated customer service team is here to assist you every step of the way.
+        <br><br>
+        Thank you for choosing Luxury Shop. Happy shopping!
+      </p>
+
+    </section>
+
+    <!-- Socials and footer -->
+    <footer class="footer">
+      <div class="footer-section">
+        <h3 class="text-lg font-bold">Socials</h3>
+        <i class="fa-brands fa-facebook-square text-xl"></i>
+        <i class="fa-brands fa-twitter text-xl"></i>
+        <i class="fa-brands fa-instagram text-xl"></i>
+      </div>
+      <div class="footer-section">
+        <h3 class="text-lg font-bold">Footer Menu</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="text-lg font-bold">Useful Links</h3>
+        <ul>
+          <li>FAQ</li>
+          <li>Support</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </footer>
+    
+    <!-- Bottom Navigation bar -->
+    <nav class="bottom-nav-bar">
+      <button class="icon-btn">
+        <i class="fa-solid fa-store"></i>
+      </button>
+      <!-- <button class="icon-btn">
+        <i class="fa-solid fa-filter"></i>
+      </button> -->
+      <button class="icon-btn">
+        <i class="fa-solid fa-heart"></i>
+      </button>
+      <button class="icon-btn">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </button>
+      <button class="icon-btn">
+        <i class="fa-solid fa-user"></i>
+      </button>
+    </nav>
+   </div>
+       <script src="script.js">
+         window.onload = function() {
+    // Resize window to 400px width
+    window.resizeTo(400, window.innerHeight);
+  };
+      
+    </script>
+</body>
+</html>

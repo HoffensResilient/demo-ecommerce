@@ -1,0 +1,21 @@
+.category-trending{
+    min-width: 250px;
+}
+.s-bold span{
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.category button{
+    font-size: 18px;
+}
+
+.products button{
+    font-size: 18px;
+}
+
+.product-banner h4 a{
+    text-decoration: none;
+    color: #333;
+}
